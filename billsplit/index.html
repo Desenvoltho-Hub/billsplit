@@ -1,13 +1,46 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
     <title>billsplit</title>
   </head>
   <body>
-    <div id="app"></div>
+    <nav>
+      <img src="/logo.png" class="logo" />
+    </nav>
+    <div class="sidebar">
+      <div class="sidebarbutton" id="dashboardbutton">Dashboard</div>
+      <div class="sidebarbutton" id="gruposbutton">Grupos</div>
+      <div class="sidebarbutton" id="contasbutton">Contas</div>
+      <div class="sidebarbutton" id="notificacoesbutton">Notificações</div>
+      <div class="sidebarbutton" id="logoutbutton">Logout</div>
+    </div>
+    <main id="main">
+      <div id="dashboard" class="dashboard">
+        <div id="cardgrupos" class="cardgrupos">
+         <h1>Meus Grupos</h1>
+          <div>
+            0
+          </div>
+        </div>
+        <div id="cardcontas" class="cardcontas">
+        <h1>Minhas Contas</h1>
+          <div>
+            0
+          </div>
+        </div>
+           
+        <div class="visaogeral">
+          <h1>Visão geral</h1>
+        </div>
+      
+      </div>
+    </main>
+      
+    <footer></footer>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
